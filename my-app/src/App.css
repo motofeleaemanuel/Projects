@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 250px;
+  height: 300px;
+}
+#root {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.929);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.search-bar {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button {
+  margin-top: 25px;
+  padding: 1em;
+  outline: none;
+  border: none;
+  font-size: 1em;
+}
+
+input {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  color: black;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: #333;
+}
+.movie-card {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.misterious {
+}
+
+@media screen and (max-width: 1240px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 311px) {
+  .title {
+    font-size: 1.4em;
+  }
+}
