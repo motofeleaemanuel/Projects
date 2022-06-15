@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input {
+  border: 1px solid rgb(214, 214, 214);
+  background-color: rgb(214, 214, 214);
+  border-radius: 3px;
+  color: black;
+  width: 150px;
+  height: 25px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+.numbers {
+  width: 150px;
+  height: 125px;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+}
